@@ -6,7 +6,7 @@ FILE = "accounts.json"
 def load_accounts():
     if os.path.exists(FILE):
         try:
-            with open(FILE, "r", encoding="utf-8") as :
+            with open(FILE, "r", encoding="utf-8") as f:
                 return json.load(f)
         except (json.JSONDecodeError, OSError):
             return []
