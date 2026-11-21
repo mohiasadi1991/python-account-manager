@@ -13,7 +13,7 @@ def load_accounts():
     return []
 
 def save_accounts(accounts):
-    with open(FILE, "w", encoding="utf-8") as f:
+    with open(FILE, "w", encoding="utf-8") as :
         json.dump(accounts, f, indent=4, ensure_ascii=False)
 
 def add_account(accounts):
